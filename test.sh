@@ -12,6 +12,6 @@ bash -n "$ROOT/install.sh"
 grep -F 'starship/setup.sh' "$ROOT/install.sh" >/dev/null
 grep -F 'tmux-setup/install.sh' "$ROOT/install.sh" >/dev/null
 grep -F -- '--yes --no-update-check' "$ROOT/install.sh" >/dev/null
-grep -F 'curl -fsSL https://git.intp.me/rudgh/settings/raw/branch/main/install.sh | bash' "$ROOT/README.md" >/dev/null
+grep -F 'curl -fsSL https://raw.githubusercontent.com/Ba-koD/settings/main/install.sh | bash' "$ROOT/README.md" >/dev/null
 
 printf 'PASS: combined installer includes Starship and tmux setup\n'
