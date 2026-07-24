@@ -2,7 +2,5 @@
 
 set -euo pipefail
 
-ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-
-bash "$ROOT/starship/setup.sh"
-bash "$ROOT/tmux-setup/install.sh" --yes --no-update-check "$@"
+curl -fsSL https://raw.githubusercontent.com/Ba-koD/starship/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Ba-koD/tmux-setup/main/install.sh | bash -s -- --yes --no-update-check "$@"
