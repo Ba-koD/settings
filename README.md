@@ -5,7 +5,7 @@ Combined Starship and tmux setup for macOS and Linux.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Ba-koD/settings/main/install.sh | bash
+curl -fsSL -H 'Accept: application/vnd.github.raw+json' https://api.github.com/repos/Ba-koD/settings/contents/install.sh | bash
 ```
 
 The wrapper downloads and runs the existing upstream installers; it does not copy their source code into this repository.
